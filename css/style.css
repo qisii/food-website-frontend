@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --light-grey: #f1f0f6;
+  --grey: #adacaf;
+  --dark-grey: #8d8d8d;
+  --dark-grey2: #374151;
+  --dark: #1f1f1f;
+  --light: #fff;
+  --grid: #f0f0f0;
+  --caption: #4d4d4d;
+  --green: #3a9378;
+  --light-green: #4ea087;
+  --bg-green1: #050505;
+  --bg-green2: #d3ece4;
+  --bg-green3: #def0ea;
+  --bg-green4: #3d856f;
+  --bg-green5: #3d7564;
+  --dark-bg: rgba(0, 0, 0, 0.7);
+  --border: 0.1rem solid #aaa;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+* > img {
+  user-select: none;
+  pointer-events: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--light);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  background: var(--green);
+  color: var(--light);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1rem 5rem;
+  border-radius: 3rem;
+}
+
+.btn:hover {
+  letter-spacing: 0.2rem;
+}
+
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--light);
+  z-index: 1000;
+}
+
+.header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--dark);
+}
+
+.header .logo i {
+  color: var(--green);
+  padding-right: 0.5rem;
+}
+
+.header .navbar a {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  color: var(--dark-grey);
+}
+
+.header .navbar a:hover {
+  color: var(--dark);
+}
+
+.header .navbar a.active::before {
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background-color: var(--color-warning);
+  /* border-radius: 50%; */
+  position: absolute;
+  bottom: 0;
+  /*right: auto;  Adjust this value based on your design */
+  transform: translateY(100%);
+}
+
+#menu-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--dark);
+  display: none;
+}
+
+/* ============================ home */
+.home {
+  padding: 0;
+}
+
+.home .container {
+  min-height: 100vh;
+  background: url("/images/hampsteadint-3-1.jpg") center/cover;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--dark-bg);
+  z-index: -1;
+}
+
+.home .container .content {
+  text-align: center;
+  width: 70rem;
+}
+
+.home .container .content span {
+  font-size: 1.2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  color: var(--light);
+  text-transform: lowercase;
+}
+
+.home .container .content h3 {
+  font-size: 3vw;
+  text-transform: uppercase;
+  color: var(--light);
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  line-height: 1;
+  padding: 2rem 0;
+}
+
+/* ============================ media queries */
+
+@media (max-width: 1200px) {
+  section {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  section {
+    padding: 3rem 2rem;
+  }
+
+  html {
+    font-size: 55%;
+  }
+}
+
+/* to display the burger menu */
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background-color: var(--light);
+    border-top: var(--border);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

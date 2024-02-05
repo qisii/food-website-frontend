@@ -172,11 +172,12 @@ section {
 }
 
 .home .container .content span {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   display: block;
   padding-bottom: 0.5rem;
   color: var(--light);
   text-transform: lowercase;
+  padding: 0 0 2rem 0;
 }
 
 .home .container .content h3 {

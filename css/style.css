@@ -23,7 +23,7 @@
   --bg-green5: #3d7564;
   --dark-bg: rgba(0, 0, 0, 0.7);
   --border: 0.1rem solid #aaa;
-  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -229,6 +229,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .about .image {
@@ -253,6 +254,7 @@ section {
   color: var(--light-dark);
   padding: 1rem 0;
   line-height: 1.5;
+  text-transform: none;
 }
 
 .about .content .icons-container {
@@ -267,7 +269,7 @@ section {
   text-align: center;
   background: var(--light-bg);
   padding: 3rem 2rem;
-  /* border-radius: 20%; */
+  border-radius: 10px;
 }
 
 .about .content .icons-container .icons i {
@@ -280,6 +282,77 @@ section {
   font-size: 1.5rem;
   color: var(--light-dark);
   font-weight: normal;
+}
+
+/* ============================ menu */
+.menu .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+
+.menu .container .card {
+  /* border: 0.1rem solid rgba(0, 0, 0, 0.2); */
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.menu .container .card .image {
+  height: 22rem;
+  width: 100%;
+  padding: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu .container .card .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.menu .container .card .content {
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.menu .container .card .content h3 {
+  color: var(--dark);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.menu .container .card .content p {
+  color: var(--light-dark);
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+  line-height: 1;
+  text-transform: none;
+}
+
+.menu h1 {
+  font-size: 3rem;
+  color: var(--dark);
+  margin-bottom: 2.5rem;
+}
+
+.menu-btn {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  border: 0.1rem solid var(--dark);
+  background: var(--dark);
+  color: var(--light);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1rem 5rem;
+  border-radius: 3rem;
+}
+
+.menu-btn:hover {
+  background: var(--light);
+  color: var(--dark);
 }
 
 /* ============================ media queries */

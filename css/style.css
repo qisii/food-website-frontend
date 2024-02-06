@@ -449,6 +449,75 @@ section {
   text-transform: lowercase;
 }
 
+/* ============================ contact */
+.contact form {
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.contact h1 {
+  font-size: 3rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1.3rem;
+  color: var(--light-dark);
+  margin-bottom: 2rem;
+  text-transform: none;
+}
+
+.contact form .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact form .box-container .box {
+  flex: 1 1 41rem;
+}
+
+.contact form .box-container .box .input-box input,
+.contact form .box-container .box .input-box textarea {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.3rem;
+  color: var(--light-dark);
+  background: var(--light-bg);
+  border: 0.1rem solid var(--light-bg);
+  border-radius: 10px;
+}
+
+.contact form .box-container .box .input-box input:focus,
+.contact form .box-container .box .input-box textarea:focus {
+  border: 0.1rem solid var(--dark);
+}
+
+.contact form .box-container .box .input-box textarea {
+  height: 10rem;
+  resize: none;
+}
+
+.contact form .box-container .box .input-box .map {
+  height: 34.1rem;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.contact form .box-container .box .input-box span {
+  color: var(--light-dark);
+  font-size: 1.5rem;
+}
+
+/* ============================ footer */
+.footer {
+  box-shadow: var(--box-shadow);
+}
+
 /* ============================ media queries */
 
 @media (max-width: 1200px) {

@@ -418,7 +418,7 @@ section {
 .review p {
   font-size: 1.3rem;
   color: var(--light-dark);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   text-transform: none;
 }
 

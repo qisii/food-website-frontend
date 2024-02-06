@@ -35,3 +35,13 @@ var swiper = new Swiper(".review-slider", {
     },
   },
 });
+
+// Function to toggle heart icon
+// function toggleHeartIcon() {
+//   const heartIcon = document.getElementById("heart");
+//   heartIcon.classList.toggle("fa-regular");
+//   heartIcon.classList.toggle("fas");
+// }
+
+// // Toggle heart icon every 1 second
+// setInterval(toggleHeartIcon, 1000);

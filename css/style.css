@@ -358,13 +358,17 @@ section {
 
 /* ============================ review */
 .review .review-slider {
-  padding: 1.5rem;
+  padding: 1.6rem;
 }
 
 .review .slide {
   box-shadow: var(--box-shadow);
   border-radius: 10px;
   position: relative;
+}
+
+.review .slide:hover {
+  transform: scale(1.05);
 }
 
 .review .slide .user {
@@ -375,24 +379,43 @@ section {
 }
 
 .review .slide .user img {
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 50%;
   object-fit: cover;
 }
 
 .review .slide .user h6 {
   color: var(--dark);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   padding-bottom: 0.5rem;
   text-transform: lowercase;
 }
+
+.review .slide .icon .fa-heart {
+  color: red;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+/* .review .slide .icon .fas.fa-heart {
+  color: red;
+} */
 
 .review .slide p {
   font-size: 1.3rem;
   color: var(--light-dark);
   text-transform: none;
   padding: 0 1rem;
+}
+
+.review .slide p span {
+  font-weight: 500;
+  color: var(--dark);
+  margin-right: 0.7rem;
+  text-transform: lowercase;
 }
 
 .review .slide .image {
@@ -405,7 +428,7 @@ section {
 .review .slide .image img {
   height: 100%;
   width: 100%;
-  border-radius: 10px 10px 0 0;
+  /* border-radius: 10px 10px 0 0; */
   object-fit: cover;
 }
 

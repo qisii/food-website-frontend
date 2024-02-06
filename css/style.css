@@ -74,7 +74,7 @@ section {
   font-size: 1.5rem;
   cursor: pointer;
   padding: 1rem 5rem;
-  border-radius: 3rem;
+  border-radius: 10px;
 }
 
 .btn:hover {
@@ -90,7 +90,7 @@ section {
   font-size: 1.5rem;
   cursor: pointer;
   padding: 1rem 5rem;
-  border-radius: 3rem;
+  border-radius: 10px;
 }
 
 .btn2:hover {
@@ -324,6 +324,7 @@ section {
 }
 
 .menu .container .card .content p {
+  height: 5rem;
   color: var(--light-dark);
   font-size: 1.4rem;
   padding: 0.5rem 0;
@@ -347,12 +348,82 @@ section {
   font-size: 1.5rem;
   cursor: pointer;
   padding: 1rem 5rem;
-  border-radius: 3rem;
+  border-radius: 10px;
 }
 
 .menu-btn:hover {
   background: var(--light);
   color: var(--dark);
+}
+
+/* ============================ review */
+.review .review-slider {
+  padding: 1.5rem;
+}
+
+.review .slide {
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  position: relative;
+}
+
+.review .slide .user {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.review .slide .user img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review .slide .user h6 {
+  color: var(--dark);
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: lowercase;
+}
+
+.review .slide p {
+  font-size: 1.3rem;
+  color: var(--light-dark);
+  text-transform: none;
+  padding: 0 1rem;
+}
+
+.review .slide .image {
+  height: 22rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.review .slide .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.review h1 {
+  font-size: 3rem;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.review p {
+  font-size: 1.3rem;
+  color: var(--light-dark);
+  margin-bottom: 2.5rem;
+  text-transform: none;
+}
+
+.review p b {
+  text-transform: lowercase;
 }
 
 /* ============================ media queries */

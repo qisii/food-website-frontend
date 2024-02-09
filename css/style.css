@@ -614,13 +614,13 @@ section {
 }
 /* ============================ media queries */
 
-@media (max-width: 1200px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
   section {
     padding: 3rem 5%;
   }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 1023px) /*991px*/ {
   section {
     padding: 3rem 2rem;
   }
@@ -631,6 +631,18 @@ section {
 
   .home .container .content h3 {
     font-size: 4vw;
+  }
+
+  .menu .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  .footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
   }
 }
 
@@ -680,9 +692,22 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1.5rem;
   }
+
+  .menu-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 0.1rem solid var(--dark);
+    background: var(--dark);
+    color: var(--light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+  }
 }
 
-@media (max-width: 450px) {
+@media (min-width: 300px) and (max-width: 480px) {
   html {
     font-size: 50%;
   }
@@ -698,6 +723,18 @@ section {
   .home .container .content span {
     font-size: 1.2rem;
     padding: 0 4rem 1rem 4rem;
+  }
+
+  .menu-btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 0.1rem solid var(--dark);
+    background: var(--dark);
+    color: var(--light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem 4.7rem;
+    border-radius: 10px;
   }
 
   .footer .box-container {

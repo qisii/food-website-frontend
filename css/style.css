@@ -598,6 +598,20 @@ section {
   text-align: end;
   justify-content: end;
 }
+
+.footer .credit {
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 0.1rem solid var(--grid);
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer .credit span {
+  text-transform: none;
+  color: var(--green);
+}
 /* ============================ media queries */
 
 @media (max-width: 1200px) {
@@ -697,5 +711,15 @@ section {
   }
   .footer .box-container .box .squad {
     margin-bottom: 1.5rem;
+  }
+
+  .footer .box-container .box:nth-child(2) {
+    text-align: start;
+    align-items: start;
+  }
+
+  .footer .box-container .box:last-child {
+    text-align: start;
+    justify-content: start;
   }
 }

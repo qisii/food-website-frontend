@@ -639,6 +639,19 @@ section {
     gap: 1.5rem;
   }
 
+  .menu-btn {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    border: 0.1rem solid var(--dark);
+    background: var(--dark);
+    color: var(--light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
   .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));

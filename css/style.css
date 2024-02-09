@@ -16,7 +16,7 @@
   --caption: #4d4d4d;
   --green: #3a9378;
   --light-green: #4ea087;
-  --bg-green1: #050505;
+  --bg-green1: #030303;
   --bg-green2: #d3ece4;
   --bg-green3: #def0ea;
   --bg-green4: #3d856f;
@@ -60,6 +60,7 @@ html::-webkit-scrollbar-track {
 
 html::-webkit-scrollbar-thumb {
   background-color: var(--green);
+  border-radius: 10px;
 }
 
 section {
@@ -188,7 +189,7 @@ section {
   left: 0;
   height: 100%;
   width: 100%;
-  background: var(--dark-bg);
+  /* background: var(--dark-bg); */
   z-index: -1;
 }
 
@@ -588,6 +589,15 @@ section {
   margin-right: 0.5rem;
 }
 
+.footer .box-container .box:nth-child(2) {
+  text-align: center;
+  align-items: center;
+}
+
+.footer .box-container .box:last-child {
+  text-align: end;
+  justify-content: end;
+}
 /* ============================ media queries */
 
 @media (max-width: 1200px) {

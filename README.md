@@ -1,1 +1,1 @@
-![footer](https://github.com/qisii/food-website-frontend/blob/10f95ebeef46368a62643c716409ee2d7df073dd/images/footer.png)
+![footer](https://github.com/qisii/food-website-frontend/blob/a5a7b08aba9f9d7c64c73aab250dab1f698bbd8f/images/footer.png)
